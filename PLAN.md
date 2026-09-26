@@ -583,7 +583,7 @@ Where `cli.js` opens the Electron app or connects to a running instance.
 - [ ] CLI launcher script
 - [x] App icon (Hydra heads in terracotta/Claude palette)
 - [ ] README + demo GIF
-- [x] GitHub repo: `MelekCreed/hydra`
+- [x] GitHub repo: `MelekCreed/Hydra-Agent-Orchestrator`
 - [x] First release
 
 **Exit criteria:**

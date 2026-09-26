@@ -597,7 +597,7 @@ Mistakes, gotchas, and lessons learned during development. Check here before sta
 
 **Mistake**: Early draft reused `electron-updater` for the macOS check-only path. `autoUpdater.checkForUpdates()` on an unsigned mac build emits errors ("Could not get code signature for running app") before it even reports a version diff.
 
-**Fix**: In `UpdateService`, branch by platform. Windows + Linux-AppImage keep the `electron-updater` path with auto-download/install. macOS uses a GitHub Releases API poller (`https://api.github.com/repos/MelekCreed/hydra/releases/latest`) with 6h interval, populates the same `AppUpdateState`, and exposes `runBrewUpgrade()` (opens Terminal via `osascript` and runs `brew upgrade --cask hydra`) and `openDownloadPage()` (opens the DMG URL in the browser). Install method is detected from `process.execPath` (`/Caskroom/hydra/` → brew). Added `canAutoInstall: boolean` and `installMethod` to `AppUpdateState` so the UI can pick the right CTA per platform/install-method.
+**Fix**: In `UpdateService`, branch by platform. Windows + Linux-AppImage keep the `electron-updater` path with auto-download/install. macOS uses a GitHub Releases API poller (`https://api.github.com/repos/MelekCreed/Hydra-Agent-Orchestrator/releases/latest`) with 6h interval, populates the same `AppUpdateState`, and exposes `runBrewUpgrade()` (opens Terminal via `osascript` and runs `brew upgrade --cask hydra`) and `openDownloadPage()` (opens the DMG URL in the browser). Install method is detected from `process.execPath` (`/Caskroom/hydra/` → brew). Added `canAutoInstall: boolean` and `installMethod` to `AppUpdateState` so the UI can pick the right CTA per platform/install-method.
 
 ### Trial: @pierre/trees + @pierre/diffs (feat/pierre-trees-diffs)
 

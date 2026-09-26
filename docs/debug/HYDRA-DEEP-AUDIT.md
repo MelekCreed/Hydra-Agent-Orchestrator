@@ -1,6 +1,6 @@
 # Hydra deep audit
 
-Audit snapshot: 2026-09-12. This section records the system before cleanup or the fixes proposed below. Repository `MelekCreed/hydra` (then a clone of the upstream project), branch `main`, commit `d8ad561`, had pre-existing uncommitted Remote Control/Windows compatibility work.
+Audit snapshot: 2026-09-12. This section records the system before cleanup or the fixes proposed below. Repository `MelekCreed/Hydra-Agent-Orchestrator` (then a clone of the upstream project), branch `main`, commit `d8ad561`, had pre-existing uncommitted Remote Control/Windows compatibility work.
 
 ## 1. Environment and observed state
 

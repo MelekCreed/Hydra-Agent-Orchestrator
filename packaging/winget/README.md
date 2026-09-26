@@ -12,7 +12,7 @@ open update PRs against `microsoft/winget-pkgs`. That action only works for
 2. Run:
    ```powershell
    wingetcreate new `
-     --urls "https://github.com/MelekCreed/hydra/releases/download/v0.2.32/hydra-0.2.32-x64.exe" `
+     --urls "https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v0.2.32/hydra-0.2.32-x64.exe" `
      --version 0.2.32
    ```
 3. Fill in the prompts — use `MelekCreed.Hydra` as the PackageIdentifier.
@@ -30,6 +30,6 @@ open update PRs against `microsoft/winget-pkgs`. That action only works for
 | PackageName | `Hydra` |
 | License | `MIT` |
 | ShortDescription | Orchestrate Claude Code and OpenAI Codex CLI agents in parallel |
-| Homepage | https://github.com/MelekCreed/hydra |
+| Homepage | https://github.com/MelekCreed/Hydra-Agent-Orchestrator |
 | InstallerType | `nullsoft` |
 | Architecture | `x64` |

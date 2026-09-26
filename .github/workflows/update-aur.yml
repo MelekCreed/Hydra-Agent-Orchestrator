@@ -43,7 +43,7 @@ jobs:
         shell: bash
         run: |
           version="${{ steps.meta.outputs.version }}"
-          url="https://github.com/MelekCreed/hydra/releases/download/v${version}/hydra-${version}-x86_64.AppImage"
+          url="https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v${version}/hydra-${version}-x86_64.AppImage"
           echo "Fetching $url"
           curl -sfL -o hydra.AppImage "$url"
           sha=$(sha256sum hydra.AppImage | awk '{print $1}')

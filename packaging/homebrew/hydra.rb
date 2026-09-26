@@ -2,10 +2,10 @@ cask "hydra" do
   version "0.2.32"
   sha256 "REPLACE_WITH_DMG_SHA256"
 
-  url "https://github.com/MelekCreed/hydra/releases/download/v#{version}/hydra-#{version}.dmg"
+  url "https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v#{version}/hydra-#{version}.dmg"
   name "Hydra"
   desc "Orchestrate Claude Code and OpenAI Codex CLI agents in parallel"
-  homepage "https://github.com/MelekCreed/hydra"
+  homepage "https://github.com/MelekCreed/Hydra-Agent-Orchestrator"
 
   auto_updates true
   depends_on macos: ">= :big_sur"

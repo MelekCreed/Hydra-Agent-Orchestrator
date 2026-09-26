@@ -41,7 +41,7 @@ jobs:
         shell: bash
         run: |
           version="${{ steps.meta.outputs.version }}"
-          url="https://github.com/MelekCreed/hydra/releases/download/v${version}/hydra-${version}.dmg"
+          url="https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v${version}/hydra-${version}.dmg"
           echo "Fetching $url"
           curl -sfL -o hydra.dmg "$url"
           sha=$(shasum -a 256 hydra.dmg | awk '{print $1}')

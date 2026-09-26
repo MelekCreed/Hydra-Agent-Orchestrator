@@ -5,7 +5,7 @@ import { autoUpdater } from 'electron-updater'
 import type { AppUpdateState, UpdateInstallMethod } from '@shared/types'
 
 const GITHUB_RELEASES_LATEST_URL =
-  'https://api.github.com/repos/MelekCreed/hydra/releases/latest'
+  'https://api.github.com/repos/MelekCreed/Hydra-Agent-Orchestrator/releases/latest'
 
 // Artifact name pattern per platform/arch. Must match electron-builder.yml
 // artifactName templates.
@@ -111,7 +111,7 @@ export class UpdateService extends EventEmitter {
         releaseDate: info.releaseDate ?? null,
         releaseNotes: normalizeReleaseNotes(info.releaseNotes),
         releaseUrl: info.version
-          ? `https://github.com/MelekCreed/hydra/releases/tag/v${info.version}`
+          ? `https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/tag/v${info.version}`
           : this.state.releaseUrl,
         error: null
       })

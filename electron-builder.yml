@@ -14,7 +14,7 @@ files:
 publish:
   - provider: github
     owner: MelekCreed
-    repo: hydra
+    repo: Hydra-Agent-Orchestrator
     releaseType: release
 mac:
   icon: build/icon.png

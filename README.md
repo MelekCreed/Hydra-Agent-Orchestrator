@@ -149,7 +149,7 @@ Built-in structured logging and diagnostics for debugging and monitoring.
 
 ### Installation
 
-Install via a package manager, or download the latest release from [GitHub Releases](https://github.com/MelekCreed/hydra/releases).
+Install via a package manager, or download the latest release from [GitHub Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases).
 
 #### macOS — Homebrew (recommended)
 
@@ -163,7 +163,7 @@ Upgrade with `brew upgrade --cask hydra`.
 
 #### macOS — direct download
 
-Download `hydra-X.Y.Z.dmg` from [Releases](https://github.com/MelekCreed/hydra/releases) and drag Hydra to `/Applications`. The first launch will be blocked by Gatekeeper because the app isn't signed — right-click `Hydra.app` → **Open** → confirm, or run:
+Download `hydra-X.Y.Z.dmg` from [Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases) and drag Hydra to `/Applications`. The first launch will be blocked by Gatekeeper because the app isn't signed — right-click `Hydra.app` → **Open** → confirm, or run:
 
 ```bash
 xattr -dr com.apple.quarantine /Applications/Hydra.app
@@ -171,7 +171,7 @@ xattr -dr com.apple.quarantine /Applications/Hydra.app
 
 #### Windows
 
-Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://github.com/MelekCreed/hydra/releases).
+Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases).
 
 #### Linux
 
@@ -192,7 +192,7 @@ Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://git
 Using **npm**:
 
 ```bash
-git clone git@github.com:MelekCreed/hydra.git
+git clone git@github.com:MelekCreed/Hydra-Agent-Orchestrator.git
 cd hydra
 npm install
 npm run build
@@ -204,7 +204,7 @@ npm run dist:linux    # Package Linux AppImage + .deb
 Using **bun**:
 
 ```bash
-git clone git@github.com:MelekCreed/hydra.git
+git clone git@github.com:MelekCreed/Hydra-Agent-Orchestrator.git
 cd hydra
 bun install
 bun run build
@@ -297,7 +297,7 @@ GitHub Actions runs on every push and pull request:
 
 ### Release
 
-Releases are published to [GitHub Releases](https://github.com/MelekCreed/hydra/releases) with an unsigned macOS DMG, a Windows installer, and Linux AppImage + `.deb` packages. The Homebrew tap ([`MelekCreed/homebrew-hydra`](https://github.com/MelekCreed/homebrew-hydra)) is auto-updated after each release.
+Releases are published to [GitHub Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases) with an unsigned macOS DMG, a Windows installer, and Linux AppImage + `.deb` packages. The Homebrew tap ([`MelekCreed/homebrew-hydra`](https://github.com/MelekCreed/homebrew-hydra)) is auto-updated after each release.
 
 ```bash
 # Tag a release
