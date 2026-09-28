@@ -5,8 +5,8 @@ GitHub release is created.
 
 | Platform | Install command | How it updates |
 |---|---|---|
-| macOS | `brew install --cask MelekCreed/hydra/hydra` | `update-homebrew.yml` bumps the cask in `MelekCreed/homebrew-hydra` |
-| Windows | `winget install MelekCreed.Hydra` | `update-winget.yml` submits a PR to `microsoft/winget-pkgs` via `vedantmgoyal9/winget-releaser` |
+| macOS | `brew install --cask MoallaMelek/hydra/hydra` | `update-homebrew.yml` bumps the cask in `MoallaMelek/homebrew-hydra` |
+| Windows | `winget install MoallaMelek.Hydra` | `update-winget.yml` submits a PR to `microsoft/winget-pkgs` via `vedantmgoyal9/winget-releaser` |
 | Arch Linux | `yay -S hydra-bin` | `update-aur.yml` pushes a new `PKGBUILD` to the AUR repo `hydra-bin` |
 
 All three jobs run automatically as part of the `Release` workflow after a
@@ -15,16 +15,16 @@ configured — see the per-platform sections below.
 
 ## macOS — Homebrew tap
 
-We publish via a **personal tap** (`MelekCreed/homebrew-hydra`) rather than the
+We publish via a **personal tap** (`MoallaMelek/homebrew-hydra`) rather than the
 official `homebrew-cask` repo. This avoids review latency and lets us ship on
-every release. Users install with `brew tap MelekCreed/hydra && brew install --cask hydra`
+every release. Users install with `brew tap MoallaMelek/hydra && brew install --cask hydra`
 or the one-liner above.
 
 **One-time setup:**
 
-1. Create a new GitHub repo: `MelekCreed/homebrew-hydra` (public, empty).
+1. Create a new GitHub repo: `MoallaMelek/homebrew-hydra` (public, empty).
 2. Copy `packaging/homebrew/hydra.rb` into it as `Casks/hydra.rb` and commit.
-3. Create a fine-grained PAT with `contents:write` on `MelekCreed/homebrew-hydra`.
+3. Create a fine-grained PAT with `contents:write` on `MoallaMelek/homebrew-hydra`.
 4. Add it to this repo's secrets as `HOMEBREW_TAP_TOKEN`.
 
 After that, `update-homebrew.yml` will rewrite the cask on every release.
@@ -41,7 +41,7 @@ Uses `vedantmgoyal9/winget-releaser` which opens a PR against
 **One-time setup:**
 
 1. Fork `microsoft/winget-pkgs` under the account that will own the PRs
-   (can be `MelekCreed`).
+   (can be `MoallaMelek`).
 2. Create a classic PAT with `public_repo` scope on that account.
 3. Add it to this repo's secrets as `WINGET_TOKEN`.
 4. The first release manifest will need to be submitted manually — see

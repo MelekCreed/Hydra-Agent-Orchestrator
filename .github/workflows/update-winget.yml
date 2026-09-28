@@ -27,7 +27,7 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         uses: vedantmgoyal9/winget-releaser@main
         with:
-          identifier: MelekCreed.Hydra
+          identifier: MoallaMelek.Hydra
           release-tag: ${{ inputs.tag }}
           installers-regex: '^hydra-.+-x64\.exe$'
           token: ${{ secrets.WINGET_TOKEN }}

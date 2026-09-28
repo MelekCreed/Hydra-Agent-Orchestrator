@@ -3,7 +3,7 @@
   "version": "0.2.61",
   "description": "Orchestrate Claude Code and OpenAI Codex CLI agents in parallel",
   "main": "./out/main/index.js",
-  "author": "MelekCreed",
+  "author": "MoallaMelek",
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/dev.mjs",

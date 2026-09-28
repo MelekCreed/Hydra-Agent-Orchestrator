@@ -149,21 +149,21 @@ Built-in structured logging and diagnostics for debugging and monitoring.
 
 ### Installation
 
-Install via a package manager, or download the latest release from [GitHub Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases).
+Install via a package manager, or download the latest release from [GitHub Releases](https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases).
 
 #### macOS — Homebrew (recommended)
 
 ```bash
-brew install --cask MelekCreed/hydra/hydra
+brew install --cask MoallaMelek/hydra/hydra
 ```
 
-This installs the Apple Silicon build from the [`MelekCreed/homebrew-hydra`](https://github.com/MelekCreed/homebrew-hydra) tap. Homebrew strips the quarantine attribute on install, so the app launches cleanly even though the DMG is unsigned.
+This installs the Apple Silicon build from the [`MoallaMelek/homebrew-hydra`](https://github.com/MoallaMelek/homebrew-hydra) tap. Homebrew strips the quarantine attribute on install, so the app launches cleanly even though the DMG is unsigned.
 
 Upgrade with `brew upgrade --cask hydra`.
 
 #### macOS — direct download
 
-Download `hydra-X.Y.Z.dmg` from [Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases) and drag Hydra to `/Applications`. The first launch will be blocked by Gatekeeper because the app isn't signed — right-click `Hydra.app` → **Open** → confirm, or run:
+Download `hydra-X.Y.Z.dmg` from [Releases](https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases) and drag Hydra to `/Applications`. The first launch will be blocked by Gatekeeper because the app isn't signed — right-click `Hydra.app` → **Open** → confirm, or run:
 
 ```bash
 xattr -dr com.apple.quarantine /Applications/Hydra.app
@@ -171,7 +171,7 @@ xattr -dr com.apple.quarantine /Applications/Hydra.app
 
 #### Windows
 
-Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases).
+Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases).
 
 #### Linux
 
@@ -192,7 +192,7 @@ Download and run the `hydra-X.Y.Z-x64.exe` installer from [Releases](https://git
 Using **npm**:
 
 ```bash
-git clone git@github.com:MelekCreed/Hydra-Agent-Orchestrator.git
+git clone git@github.com:MoallaMelek/Hydra-Agent-Orchestrator.git
 cd hydra
 npm install
 npm run build
@@ -204,7 +204,7 @@ npm run dist:linux    # Package Linux AppImage + .deb
 Using **bun**:
 
 ```bash
-git clone git@github.com:MelekCreed/Hydra-Agent-Orchestrator.git
+git clone git@github.com:MoallaMelek/Hydra-Agent-Orchestrator.git
 cd hydra
 bun install
 bun run build
@@ -297,7 +297,7 @@ GitHub Actions runs on every push and pull request:
 
 ### Release
 
-Releases are published to [GitHub Releases](https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases) with an unsigned macOS DMG, a Windows installer, and Linux AppImage + `.deb` packages. The Homebrew tap ([`MelekCreed/homebrew-hydra`](https://github.com/MelekCreed/homebrew-hydra)) is auto-updated after each release.
+Releases are published to [GitHub Releases](https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases) with an unsigned macOS DMG, a Windows installer, and Linux AppImage + `.deb` packages. The Homebrew tap ([`MoallaMelek/homebrew-hydra`](https://github.com/MoallaMelek/homebrew-hydra)) is auto-updated after each release.
 
 ```bash
 # Tag a release
@@ -321,7 +321,7 @@ bash scripts/deploy-local.sh
 
 Required repository secrets:
 
-- `HOMEBREW_TAP_TOKEN` — fine-grained PAT with `contents:write` on `MelekCreed/homebrew-hydra`, used by `update-homebrew.yml` to commit new cask versions.
+- `HOMEBREW_TAP_TOKEN` — fine-grained PAT with `contents:write` on `MoallaMelek/homebrew-hydra`, used by `update-homebrew.yml` to commit new cask versions.
 
 See [`packaging/README.md`](packaging/README.md) for the full packaging setup (Homebrew tap, plus scaffolding for winget and AUR if/when activated).
 
@@ -354,4 +354,4 @@ Contributions are welcome. Please read the [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## License
 
-[MIT](LICENSE) - 2026 MelekCreed
+[MIT](LICENSE) - 2026 MelekCreed (now MoallaMelek)

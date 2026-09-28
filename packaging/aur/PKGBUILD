@@ -1,16 +1,16 @@
-# Maintainer: MelekCreed <MelekCreed@users.noreply.github.com>
+# Maintainer: MoallaMelek <164659569+MoallaMelek@users.noreply.github.com>
 pkgname=hydra-bin
 pkgver=0.2.32
 pkgrel=1
 pkgdesc="Orchestrate Claude Code and OpenAI Codex CLI agents in parallel"
 arch=('x86_64')
-url="https://github.com/MelekCreed/Hydra-Agent-Orchestrator"
+url="https://github.com/MoallaMelek/Hydra-Agent-Orchestrator"
 license=('MIT')
 depends=('fuse2')
 provides=('hydra')
 conflicts=('hydra')
 options=(!strip !debug)
-source=("https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v${pkgver}/hydra-${pkgver}-x86_64.AppImage")
+source=("https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases/download/v${pkgver}/hydra-${pkgver}-x86_64.AppImage")
 sha256sums=('SKIP')
 noextract=("hydra-${pkgver}-x86_64.AppImage")
 

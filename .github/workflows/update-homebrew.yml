@@ -41,7 +41,7 @@ jobs:
         shell: bash
         run: |
           version="${{ steps.meta.outputs.version }}"
-          url="https://github.com/MelekCreed/Hydra-Agent-Orchestrator/releases/download/v${version}/hydra-${version}.dmg"
+          url="https://github.com/MoallaMelek/Hydra-Agent-Orchestrator/releases/download/v${version}/hydra-${version}.dmg"
           echo "Fetching $url"
           curl -sfL -o hydra.dmg "$url"
           sha=$(shasum -a 256 hydra.dmg | awk '{print $1}')
@@ -51,7 +51,7 @@ jobs:
         if: steps.check.outputs.skip == 'false'
         uses: actions/checkout@v4
         with:
-          repository: MelekCreed/homebrew-hydra
+          repository: MoallaMelek/homebrew-hydra
           token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
           path: tap
 

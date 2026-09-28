@@ -13,7 +13,7 @@ files:
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json,electron.vite.config.ts}'
 publish:
   - provider: github
-    owner: MelekCreed
+    owner: MoallaMelek
     repo: Hydra-Agent-Orchestrator
     releaseType: release
 mac:
@@ -34,7 +34,7 @@ win:
 linux:
   icon: build/icon.png
   category: Development
-  maintainer: MelekCreed <MelekCreed@users.noreply.github.com>
+  maintainer: MoallaMelek <164659569+MoallaMelek@users.noreply.github.com>
   target:
     - AppImage
     - deb
